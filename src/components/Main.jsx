@@ -59,7 +59,7 @@ function Main() {
           
           <div className="main-bottom">
             <div className="search-box">
-                <input onChange={(e)=>setInput(e.target.value)} value={input} type="text" placeholder="Enter your prompt here...." />
+                <input value={input} onChange={(e)=>setInput(e.target.value)} type="text" placeholder="Enter your prompt here...." />
                 <div className="icon">
                     <img src={assets.gallery_icon} alt="" />
                     <img src={assets.mic_icon} alt="" />
@@ -67,7 +67,7 @@ function Main() {
                 </div>
             </div>
             <div className="bottom-info">
-                <p>Powered by OpenAI jngdj bgdsug ybeyugb yhugb dghdgyuegh er</p>
+                <p>Powered by OpenAI </p>
             </div>
           </div>
       </div>

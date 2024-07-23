@@ -8,6 +8,7 @@
   min-height: 100vh;
   display: flex;
   font-family: "Outfit";
+  animation: fadeIn 1.5s;
 }
 .sidebar{
   min-height: 100vh;
@@ -29,6 +30,7 @@ img{
   display: inline-flex;
   align-items: center;
   gap: 10px;
+  cursor: pointer;
   padding: 10px;
   margin: 5px;
   background-color: rgb(203, 203, 203);
@@ -37,6 +39,7 @@ img{
 .recent{
   display: flex;
   flex-direction: column;
+  animation: fadeIn 1.5s;
 }
 .recent-title{
   margin-top: 30px;
@@ -48,6 +51,7 @@ img{
   gap: 10px;
   padding: 10px;
   border-radius:20px;
+  cursor: pointer;
 }
 .recent-entry:hover{
   background-color: #e4e1e1;
@@ -81,7 +85,7 @@ img{
 }
 .greeting{
   font-size: 56px;
-  margin: 50px 0px;
+  margin: 40px 0px;
   padding: 20px;
   font-weight: 500;
   color: #c4c7c5;
@@ -96,6 +100,7 @@ img{
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 15px;
   padding: 20px;
+  margin-bottom: 10px;
 }
 .card img{
   width: 35px;
@@ -123,6 +128,7 @@ img{
   max-width: 900px;
   padding:0 20px ;
   margin: auto;
+  margin-top: 10px;
 }
 .search-box{
   display: flex;
@@ -206,4 +212,31 @@ input{
   font-size: 17px;
   font-family:300;
   line-height: 1.5;
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@media (max-width:600px){
+  .sidebar{
+    display: none;
+  }
+  .main-bottom input{
+    flex: none;
+    width: 150px;
+  }
+  .main-bottom img{
+    width: 20px;
+  }
+  .search-box{
+    padding: 5px 10px;
+  }
+  .search-box div{
+    gap: 5px;
+  }
 }
